@@ -1,0 +1,18 @@
+.box{
+    background-color: #accef3; 
+    border: none;
+}
+.icons img{
+    filter: drop-shadow(4px 4px 6px rgba(0, 0, 0, 0.904));
+
+}
+
+
+@media only screen and (max-width:765px) {
+    .contact-cont{
+        flex-direction: column;
+    }
+    .box{
+        padding: 2rem;
+    }
+}

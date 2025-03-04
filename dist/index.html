@@ -1,0 +1,366 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="./output.css" rel="stylesheet">
+  <!-- gsap cdn -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <!-- minimal custome css  -->
+   <link rel="stylesheet" href="../src/style.css">
+</head>
+<body> 
+   <div id="main" class="bg-[#dceafd] relative">
+    <div class="circle"></div>
+    <!-- sidebar start  -->
+    <div class="sidebar">
+
+      <div class="side-menu">
+        <ul class="mt-[4rem] flex flex-col justify-center items-center gap-4 text-2xl text-white">
+          <li><a href="./index.html">Home</a></li>
+          <li><a href="../pages/services.html">Services</a></li>
+          <li><a href="../pages/proj.html">Projects</a></li>
+          <li><a href="#">About</a></li>
+          <li><a href="../pages/contact.html">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+    <!-- sidebar end -->
+
+     <!-- home section start  -->
+     <div  class="hero w-full h-screen bg-[radial-gradient(circle,_#5782aF,_#21D0B2)] ">
+
+      <!-- menu button -->
+      <i class="menu-bar fa-solid fa-bars text-xl"></i>
+
+        <!-- navbar start  -->
+        <nav class="navbar z-2 w-[90%] m-auto flex justify-between items-center h-[10vh] pr-8 rounded-[2rem] shadow-xl">
+
+            <!-- logo section -->
+            <div class="logo ">
+               <a href="./index.html">
+                <img src="../assets/navbar/without.png" class="object-cover" width="180px" alt="Code sphere" >
+               </a>
+            </div>
+
+            <!-- menu section -->
+            <div class="menu">
+                <ul class="flex gap-4 text-[larger] text-[#2F455c] font-bold ">
+                    <li><a class="hover:text-[#2F455C]" href="./index.html">Home</a></li>
+                   <li class="services">
+                     <li><a class=" hover:text-[#2F455C]" href="../pages/services.html">Services</a>
+                        <div class="submenu mt-[-.4rem] bg-black flex gap-[2rem] p-4">
+                           <div class="col ">
+                              <h1>app dev</h1>
+                              <ul>
+                                 <li><a href="#"></a>link</li>
+                                 <li><a href="#"></a>link</li>
+                                 <li><a href="#"></a>link</li>
+                                 <li><a href="#"></a>link</li>
+                              </ul>
+                           </div>
+                        </div>
+                        </li>
+                   </li>
+                    <li><a class="hover:text-[#2F455C]" href="../pages/proj.html">Projects</a></li>
+                    <li><a class="hover:text-[#2F455C]" href="#">About</a></li>
+                    <li><a class="hover:text-[#2F455C]" href="../pages/contact.html">Contact</a></li>
+                </ul>
+            </div>
+
+            <!-- buttons section -->
+             <div class="nav-buttons flex gap-2 ">
+                  <button class="login bg-[#2F455C]  text-white border-[#2F455C] text-md font-bold  rounded-[1.4rem] p-1 pl-6 pr-6">Login 
+                  </button> 
+                <button class="getintouch border text-md  border-[#2F455C] font-bold  rounded-[1.4rem] p-1 pl-2 pr-2 hover:bg-[#2F455C] hover:text-white">Get In Touch</button>
+             </div>
+        </nav>
+    <!-- navbar end  -->
+
+    <!-- hero section start  -->
+     <div class="hero-sec wid-[90%] m-auto h-[86vh] flex items-center justify-center">
+
+      <div class="hero-content flex flex-col justify-center items-center">
+
+         <!-- hero-row1 start -->
+         <div class="hero-row-1 flex items-center gap-2 text-6xl font-bold">
+            <span>Empowering </span>
+           <div class="row1-vid bg-blue-400 w-[16vw]  h-[14vh] rounded-[3rem] overflow-hidden">
+            <video autoplay muted loop  src="../assets/hero page/7989458-sd_960_540_25fps.mp4" class="object-cover h-full w-full"></video>
+           </div>
+            <span>Business</span>
+         </div>
+
+         <!-- hero-row 2 start -->
+         <div class="hero-row-2 mt-[1rem] flex gap-2 items-center text-6xl font-bold">
+            <span>your Vision</span>
+            <div class="hero-row2-logos flex items-center">
+               <img class="rounded-full  bg-white" src="../assets/hero page/pexels-cottonbro-cg-studio-70588080-8830979.jpg" width="80px">
+               <img class="rounded-full ml-[-1.4rem]" src="../assets/hero page/download-1002802_1280.jpg" width="80px">
+            </div>
+            <span>Our Experties</span>
+            <div class="row2-vid  bg-blue-400 w-[10vw]  h-[12vh] rounded-[3rem] overflow-hidden">
+               <video autoplay muted loop  src="../assets/hero page/row2.mp4" class="object-cover h-full w-full"></video>
+            </div>
+         </div>
+
+         <!-- hero text  -->
+         <div class="hero-text text-center text-xl mt-2 font-bold">
+            <p>Do You Want To Learn Techniques That Will Help</p>
+            <p> To Grow Your business</p>
+         </div>
+      </div>
+     </div>
+    </div>
+    <!-- home section end  -->
+
+    <!-- section-2 start  -->
+      <div class="section-2 w-full">
+
+        <!-- banner of second section -->
+        <div class="sec2-banner h-[10vh] w-full font-bold bg-white text-3xl  text-nowrap flex gap-4 items-center">
+         <div class="banner flex text-nowrap gap-[2rem]">
+           <h1>Web Development</h1>
+         <img src="../assets/3d logos/star.webp" alt="">
+         <h1>SEO & Marketing Excellence</h1>
+         <img src="../assets/3d logos/star.webp" alt="">
+           <h1>UI/UX Designing</h1>
+         <img src="../assets/3d logos/star.webp" alt="">
+           <h1>Graphic Designing</h1>
+         <img src="../assets/3d logos/star.webp" alt="">
+           <h1>Social Media Marketing</h1>
+         <img src="../assets/3d logos/star.webp" alt="">
+           <h1>E-Commerce Solutions</h1>
+         <img src="../assets/3d logos/star.webp" alt="">
+           <h1>Digital Marketing</h1>
+         <img src="../assets/3d logos/star.webp" alt="">
+           <h1>5+ years Innovation And Experience</h1>
+         <img src="../assets/3d logos/star.webp" alt="">
+          </div>
+ 
+          <div class="banner flex text-nowrap gap-[2rem]">
+          <img src="../assets/3d logos/star.webp" alt="">
+          <h1>SEO & Marketing Excellence</h1>
+          <img src="../assets/3d logos/star.webp" alt="">
+            <h1>UI/UX Designing</h1>
+          <img src="../assets/3d logos/star.webp" alt="">
+            <h1>Graphic Designing</h1>
+          <img src="../assets/3d logos/star.webp" alt="">
+            <h1>Social Media Marketing</h1>
+          <img src="../assets/3d logos/star.webp" alt="">
+            <h1>E-Commerce Solutions</h1>
+          <img src="../assets/3d logos/star.webp" alt="">
+            <h1>Digital Marketing</h1>
+          <img src="../assets/3d logos/star.webp" alt="">
+            <h1>5+ years Innovation And Experience</h1>
+          <img src="../assets/3d logos/star.webp" alt="">
+           </div>
+        
+      </div>
+ 
+      <!-- section-2 achievments -->
+      <div class="sec2-achievements bg-[#dceafd] text-[#2F455C] h-[80vh] pt-[4rem] p-[2rem]">
+        <div class="achievements-cont w-[90%] m-auto flex flex-col md:flex-row items-center md:items-start justify-center">
+          <div class="achievments-left flex-1 mt-[2rem] text-center md:text-left">
+            <div class="achievements-top">
+              <p class="font-bold">TRUST AND INNOVATION</p>
+            </div>
+            <div class="achievements-title font-bold">
+              <h1 class="text-4xl font-extrabold m-2 ml-0">Code Sphere's Achievments</h1>
+            </div>
+            <div class="achievements-desc font-bold">
+              <p>
+                At Code Sphere, we take pride in empowering businesses worldwide with innovative solutions. We bring an unwavering commitment to excellence, backed by a global presence.
+              </p>
+            </div>
+            <button class="achievements-button bg-[#2F455C] shadow-2xl p-2 pr-4 pl-4 rounded-3xl font-bold text-white mt-4 hover:text-black hover:bg-[white]">Get In Touch</button>
+          </div>
+          
+          <div class="achievments-right flex-[1.4] mt-6 md:mt-0">
+            <div class="w-full grid justify-center grid-cols-2 grid-rows-2 p-2">
+              <div class="p-4 text-center">
+                <p class="count num text-4xl font-bold" value="99"></p>
+                <p class="titlw text-xl font-bold">Successful Projects</p>
+              </div>
+              <div class="p-4 text-center">
+                <p class="count num text-4xl font-bold" value="140+"></p>
+                <p class="titlw text-xl font-bold">Active Clients</p>
+              </div>
+              <div class="p-4 text-center">
+                <p class="count num text-4xl font-bold" value="5"></p>
+                <p class="titlw text-xl font-bold">Years Of Experience</p>
+              </div>
+              <div class="p-4 text-center">
+                <p class="count num text-4xl font-bold" value="40+"></p>
+                <p class="titlw text-xl font-bold">Experienced Employees</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      </div>
+    <!-- section-2 end  -->
+
+
+      <!-- section 3 start -->
+      <div class="sec-3-cont h-screen w-full transform: translate-y-[-50%]">
+        <div class="section-3 w-[90%] h-screen m-auto flex gap-4 relative ">
+          <div class="section-3-left flex-1 h-full">
+  
+            <!-- video section -->
+            <div class="sec3-left-vid h-full w-full flex items-start ">
+              <video loop muted autoplay class="sec3-video object-cover w-[50%] h-[80%] rounded-xl absolute top-[4rem] left-[2rem]" src="../assets/section3/5207408-hd_1920_1080_25fps.mp4"></video>
+            </div>
+          </div>
+          <div class="section-3-right text-[#2F455C] flex-1 h-full flex items-center justify-center ">
+            <div class="sec3-conten w-[80%] ">
+              <div class="sec3-right-top ">
+                <p class=" text-xl">careers</p>
+              </div>
+              <div class="sec3-right-title">
+                <h1 class="text-5xl font-extrabold m-2 ml-0">Human-first is our foundation.</h1>
+              </div>
+              <div class="sec3-right-desc">
+                <p>Join a culture that celebrates excellence and diversity, Globally! culture that celebrates excellence and diversity, Globally!</p>
+              </div>
+              <button class="achievements-button border shadow-2xl bg-[#2F455C] p-2 pr-4 pl-4 rounded-3xl font-bold text-white mt-4 hover:text-black hover:bg-[white]">Join Us</button>
+            </div>
+           
+          </div>
+        </div>
+      </div>
+     <!-- section 3 end -->
+
+        <!-- section4 start -->
+    <div class="section-4 text-[#2F455C] w-full transform: translate-y-[-36%]">
+
+      <!-- stories section -->
+       <div class="stories flex w-[90%] m-auto">
+        <div class="stories-left flex-1 flex flex-col justify-center gap-4  ">
+         <p class="stories-top font-bold">FEATURED INSIGHTS</p>
+         <h1 class="stories-title text-4xl font-bold">
+          STORIES Of Our TransforMation Across Services And Industries
+         </h1>
+         <button class="achievements-button border shadow-2xl  bg-[#2F455C] p-2  rounded-3xl font-bold text-white mt-4 hover:text-black hover:bg-[white]">Join Us</button>
+        </div>
+       <div class="stories-right flex-2 flex gap-4 items-center justify-center">
+        <div class="col1 transform translate-y-[-2rem] flex flex-col gap-2"> 
+          <div class="col1-box h-[160px] w-[180px] rounded-[1rem] border">
+            <img src="../assets/section4/coding.jpg" class="object-cover" alt="">
+          </div>
+          <div class="col1-box h-[160px] w-[180px] rounded-[1rem] border">
+            <img src="../assets/section4/coding.jpg" class="object-cover" alt="">
+          </div>
+          <div class="col1-box h-[160px] w-[180px] rounded-[1rem] border">
+            <img src="../assets/section4/coding.jpg" class="object-cover" alt="">
+          </div>
+          <!-- <div class="col1-box h-[160px] w-[180px] rounded-[1rem] border">
+            <img src="../assets/section4/coding.jpg" class="object-cover" alt="">
+          </div> -->
+        </div>
+        <div class="col2 transform  flex flex-col gap-2">
+          <div class="col1-box h-[160px] w-[180px] rounded-[1rem] border">
+            <img src="../assets/section4/coding.jpg" class="object-cover" alt="">
+          </div>
+          <div class="col1-box h-[160px] w-[180px] rounded-[1rem] border">
+            <img src="../assets/section4/coding.jpg" class="object-cover" alt="">
+          </div>
+          <div class="col1-box h-[160px] w-[180px] rounded-[1rem] border">
+            <img src="../assets/section4/coding.jpg" class="object-cover" alt="">
+          </div>
+        </div>
+        <div class="col3 transform  flex flex-col gap-2">
+          <div class="col1-box h-[160px] w-[180px] rounded-[1rem] border">
+            <img src="../assets/section4/coding.jpg" class="object-cover" alt="">
+          </div>
+          <div class="col1-box h-[160px] w-[180px] rounded-[1rem] border">
+            <img src="../assets/section4/coding.jpg" class="object-cover" alt="">
+          </div>
+          <div class="col1-box h-[160px] w-[180px] rounded-[1rem] border">
+            <img src="../assets/section4/coding.jpg" class="object-cover" alt="">
+          </div>
+        </div>
+       </div>
+       </div>
+
+   </div>
+   <!-- section-4 end -->
+    
+
+   <!-- section-5 start -->
+
+   <div class="section-5 w-full">
+
+    <div class="sec5-title w-[90%] m-auto">
+      <h1 class="text-5xl font-bold">Crafted With <span class="text-red-700">Love</span></h1>
+      <p class="font-bold">There are few of our recent work</p>
+    </div>
+
+    <div class="sec5-art w-[90%] mt-8 rounded-2xl p-2 m-auto flex flex-col bg-[#2F455C]">
+      <!-- row1  -->
+      <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-4 p-4">
+        <div class="p-2 bg-[#f0eded] flex items-center rounded-2xl">
+          <img src="../assets/section5/gif1.gif" class="rounded-xl object-cover h-full w-full" alt="">
+        </div>
+        <div class="p-2 bg-yellow-400 flex items-center rounded-2xl">
+          <img src="../assets/section5/pic1.png" class="rounded-xl object-cover h-full w-full " alt="">
+        </div>
+        <div class="p-2 bg-gray-600 flex items-center rounded-2xl">
+          <img src="../assets/section5/gif5.gif" class="rounded-xl object-cover h-full w-full" alt="">
+        </div>
+       
+        <div class="p-2 bg-blue-900 flex items-center rounded-2xl">
+          <img src="../assets/section5/pic6.webp" class="rounded-xl object-cover h-full w-full " alt="">
+        </div>
+      </div>
+
+      <!-- row2  -->
+      <div class="grid grid-cols-1 sm:grid-cols-3 md:grid-cols-5 gap-4 p-4">
+        <div class="p-2 bg-gray-600 flex items-center rounded-2xl">
+          <img src="../assets/section5/gif2.gif" class="rounded-xl object-contain h-full w-full" alt="">
+        </div>
+        <div class="p-2 bg-blue-900 flex items-center rounded-2xl">
+          <img src="../assets/section5/pic5.webp" class="rounded-xl object-cover h-full w-full" alt="">
+        </div>
+        <div class="p-2 bg-orange-600 flex items-center rounded-2xl">
+          <img src="../assets/section5/gif3.gif" class="rounded-xl object-cover h-full w-full " alt="">
+        </div>
+        <div class="p-2 bg-gray-400 flex items-center rounded-2xl">
+          <img src="../assets/section5/pic4.webp" class="rounded-xl object-cover h-full w-full " alt="">
+        </div>
+        <div class="p-2 bg-gray-400 flex items-center rounded-2xl">
+          <img src="../assets/section5/gif6.gif" class="rounded-xl object-cover h-full w-full " alt="">
+        </div>
+      </div>
+      
+    </div>
+
+    
+   </div>
+   <!-- section-5 end -->
+
+
+   <!-- section 6 start -->
+    <div class="sectiono-6 h-screen w-full bg-blue-800">
+
+    </div>
+   <!-- section 6 end -->
+
+
+   <!-- section 7 start -->
+   <div class="sectiono-7 h-screen w-full bg-green-800">
+
+   </div>
+  <!-- section 7 end -->
+</div>
+
+   <!-- gsap cdn -->
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js" integrity="sha512-7eHRwcbYkK4d9g/6tD/mhkf++eoTHwpNM9woBxtPUBWm67zeAfFC+HrdoE2GanKeocly/VxeLvIqwvCdk7qScg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+   <!-- scroll trigger cdn  -->
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js" integrity="sha512-onMTRKJBKz8M1TnqqDuGBlowlH0ohFzMXYRNebz+yOcc5TQr/zAKsthzhuv0hiyUKEiQEQXEynnXCvNTOk50dg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+   <!-- index js link -->
+   <script src="../src/index.js"></script>
+</body>
+</html>

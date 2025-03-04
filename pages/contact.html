@@ -1,0 +1,157 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="./output.css" rel="stylesheet">
+  <!-- gsap cdn -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <!-- minimal custome css  -->
+   <link rel="stylesheet" href="../src/contact.css">
+   <link rel="stylesheet" href="../src/style.css">
+   <link href="../dist/output.css" rel="stylesheet">
+
+</head>
+<body>
+    <div class="main bg-[#dceafd]">
+        <div class="circle"></div>
+        <div class="nav-cont">
+            <!-- sidebar start  -->
+        <div class="sidebar">
+    
+            <div class="side-menu">
+              <ul class="mt-[2rem] flex flex-col justify-center items-center gap-4 text-2xl text-white">
+                <li><a href="../dist/index.html">Home</a></li>
+                <li><a href="../pages/services.html">Services</a></li>
+                <li><a href="../pages/proj.html">Projects</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="../pages/contact.html">Contact</a></li>
+              </ul>
+            </div>
+          </div>
+          <!-- sidebar end -->
+  
+          <!-- menu button -->
+          <i class="menu-bar fa-solid fa-bars text-xl"></i>
+
+           <!-- navbar start  -->
+           <nav class="navbar z-2 w-[90%]  m-auto flex justify-between items-center h-[10vh] pr-8 rounded-[2rem] shadow-xl">
+  
+              <!-- logo section -->
+              <div class="logo ">
+                 <a href="../dist/index.html">
+                  <img src="../assets/navbar/without.png" class="object-cover" width="180px" alt="Code sphere" >
+                 </a>
+              </div>
+  
+              <!-- menu section -->
+              <div class="menu">
+                  <ul class="flex gap-4 text-[larger] text-[#2F455c] font-bold ">
+                      <li><a class="hover:text-[#2F455C]" href="../dist/index.html">Home</a></li>
+                     <li class="services">
+                       <li><a class=" hover:text-[#2F455C]" href="../pages/services.html">Services</a>
+                          <div class="submenu mt-[-.4rem] bg-black flex gap-[2rem] p-4">
+                             <div class="col ">
+                                <h1>app dev</h1>
+                                <ul>
+                                   <li><a href="#"></a>link</li>
+                                   <li><a href="#"></a>link</li>
+                                   <li><a href="#"></a>link</li>
+                                   <li><a href="#"></a>link</li>
+                                </ul>
+                             </div>
+                          </div>
+                          </li>
+                     </li>
+                      <li><a class="hover:text-[#2F455C]" href="../pages/proj.html">Projects</a></li>
+                      <li><a class="hover:text-[#2F455C]" href="#">About</a></li>
+                      <li><a class="hover:text-[#2F455C]" href="../pages/contact.html">Contact</a></li>
+                  </ul>
+              </div>
+  
+              <!-- buttons section -->
+               <div class="nav-buttons flex gap-2 ">
+                    <button class="login bg-[#2F455C]  text-white border-[#2F455C] text-md font-bold  rounded-[1.4rem] p-1 pl-6 pr-6">Login 
+                    </button> 
+                  <button class="getintouch border text-md  border-[#2F455C] font-bold  rounded-[1.4rem] p-1 pl-2 pr-2 hover:bg-[#2F455C] hover:text-white">Get In Touch</button>
+               </div>
+          </nav>
+      <!-- navbar end  -->
+        </div>
+
+        <!-- contact hero section -->
+        <div class="contact-main  h-[90vh]  w-full flex justify-center">
+            <!-- <div class="icons">
+                <a href="#">
+                    <img class="fixed right-20 top-[20%] animate-pulse" src="../assets/3d logos/breadcrumb-shape-2.png" width="" alt="">
+                </a>
+            </div>  -->
+            <div class="contact-hero w-[90%] h-[90%] shadow-2xl flex justify-center items-center flex-col gap-4 bg-[#accef3]  m-auto rounded-3xl">
+                <div class="title text-4xl font-bold">Contact</div>
+                <button class=" cursor-pointer border-2 p-3 pr-4 pl-4 rounded-4xl text-xl"><pre>Home > Contact</pre></button>
+            </div>
+        </div>
+
+
+
+
+          <!-- contact content -->
+          <div class="cont-row mt-6 h-screen flex flex-col items-center gap-6 w-[90%] m-auto">
+
+              <!-- title  -->
+         <h1  class="text-center text-4xl font-bold text-[#274875]">Our Contact Details </h1>
+
+         <!-- content -->
+            <div class="content contact-cont flex gap-4">
+                <!-- address box -->
+            <div class="box shadow-2xl flex-1 h-[40vh] flex flex-col gap-4 text-center justify-center items-center p-6 border rounded-2xl">
+                <div class="icon text-4xl">
+                    <i class="fa-solid fa-location-dot"></i>
+                </div>
+                <div class="detail">
+                   <h1 class="address text-2xl font-bold">Our Address</h1>
+                   <p>Saddar Cant Bashi Sons Pharmacy 3rd Floor</p>
+                </div>
+            </div>
+
+            <!-- email box -->
+            <div class="box shadow-2xl flex-1 h-[40vh] flex flex-col gap-4 text-center justify-center items-center p-6 border rounded-2xl">
+                <div class="icon text-4xl">
+                    <i class="fa-solid fa-envelope"></i>
+                </div>
+                <div class="detail">
+                   <h1 class="address text-2xl font-bold">codesphere25@gmail.com</h1>
+                   <p>Email us to discuss your project or inquire about our services.</p>
+                </div>
+            </div>
+
+            <!-- phone number -->
+            <div class="box shadow-2xl flex-1 h-[40vh] flex flex-col gap-4 text-center justify-center items-center p-6 border rounded-2xl">
+                <div class="icon text-4xl">
+                    <i class="fa-solid fa-phone"></i>
+                </div>
+
+                <!-- number -->
+                <div class="detail">
+                   <h1 class="address text-2xl font-bold">03333333333</h1>
+                   <p>Call us now for expert assistance and personalized solutions.</p>
+                </div>
+            </div>
+            </div>
+
+
+         </div>
+
+    </div>
+
+
+    <!-- gsap cdn -->
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js" integrity="sha512-7eHRwcbYkK4d9g/6tD/mhkf++eoTHwpNM9woBxtPUBWm67zeAfFC+HrdoE2GanKeocly/VxeLvIqwvCdk7qScg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+   <!-- scroll trigger cdn  -->
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js" integrity="sha512-onMTRKJBKz8M1TnqqDuGBlowlH0ohFzMXYRNebz+yOcc5TQr/zAKsthzhuv0hiyUKEiQEQXEynnXCvNTOk50dg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+   <!-- index js link -->
+   <script src="../src/contact.js"></script>
+   <script src="../src/index.js"></script>
+</body>
+</html>

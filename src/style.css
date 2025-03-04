@@ -1,0 +1,239 @@
+
+    @font-face {
+        font-family:font ;
+        src: url(../assets/fonts/font.woff2);
+    }
+    *{
+        box-sizing: border-box;
+    }
+    body{
+        font-family: font;
+        position: relative;
+        overflow-x: hidden;
+    }
+
+    .col1-box{
+        overflow: hidden;
+    }
+
+    /* mouse circle  */
+    .circle{
+        z-index: 10;
+        height: 20px;
+        width: 20px;
+        margin: -1rem;
+        box-shadow: 4px 4px 20px rgb(0, 0, 0);
+        background-color: rgba(0, 0, 0, 0.801);
+        border-radius: 50%;
+        position: absolute;
+        pointer-events: none; /* Prevents the circle from blocking interactions */
+        mix-blend-mode: hard-light;
+        transition: all .2s ease-out;
+    }
+    /* side bar */
+    .sidebar{
+        position: absolute;
+        height: 100vh;
+        width: 0%;
+        opacity: 0;
+        display: none;
+        right: 0rem;
+        background-color: rgba(0, 0, 0, 0.644);
+        backdrop-filter: blur(4px); 
+    }
+    .sidebar ul li a{
+        transition: all .2s ease-in-out;
+        &:hover{
+            text-decoration: underline;
+            color: #2F455C;
+        }
+    }
+
+    /* navbar styling */
+/* .hero{
+    padding-top: .4rem;
+} */
+
+    /* bg color mirror type */
+    nav{
+        background: #f3f3f393;
+        filter: drop-shadow(4px);
+        border-bottom: 2px solid rgba(255, 255, 255, 0.575);
+    }
+    .menu-bar{
+        display: none;
+    }
+
+    /* before and after on menu */
+nav  ul li > a{
+    position: relative;
+}
+nav  ul li > a::before{
+    content: "";
+    position: absolute;
+    height: 2px;
+    width: 0%;
+    background-color: black;
+    bottom: 0;
+    left: 0;
+    z-index: 2;
+    transition: all .2s ease-in-out;
+}
+nav  ul li > a:hover::before{
+    width: 100%;
+    background-color: #2F455C;
+}
+/* submenu */
+nav{
+    position: relative;
+}
+.submenu{
+    position: absolute;
+    left: -14rem;
+}
+
+
+/* banner  */
+.sec2-banner{
+    text-wrap: nowrap;
+    overflow: hidden;
+}
+.banner{
+animation: move 20s linear  infinite ;
+}
+
+@keyframes move {
+    0%{
+        transform: translate(0%);
+    }
+    100%{
+        transform: translate(-100%);
+    }
+}
+
+
+/* responsive design */
+@media only screen and (max-width:970px){
+    /* menu button  */
+    .menu-bar{
+        display: block;
+        z-index: 10;
+        position: absolute;
+        right: 6rem;
+        top: 1.6rem;
+    }
+
+
+    /* navbar     */
+    nav  .menu , nav .nav-buttons{
+        display: none;
+    }
+    
+    /* hero page */
+    .hero-row-1 , .hero-row-2{
+        font-size: 3rem;
+    }
+    .row2-vid , .row1-vid{
+        width: 14vw;
+        height: 10vh;
+    }
+    .rounded-full{
+        width: 60px;
+    }
+
+    /* section3 */
+    .section-3{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+       gap: 0.4rem;
+       transform: translateY(30%);
+    }
+    .sec3-left-vid video{
+        height: 70%;
+        width: 80%;
+    }
+    .section-3-right{
+        display: none;
+    }
+
+    /* section 4 stories section */
+    .section-4{
+        /* transform: translateY(-%); */
+    }
+    .stories{
+        flex-direction: column;
+        justify-content: space-around;
+        /* height: 140vh; */
+    }
+    .stories-left{
+        text-align: center;
+    }
+    /* .col1 > .col1-box{
+        width: 100%;
+        height: 100%;
+    } */
+    .col1, .col2 ,  .col3{
+        display: none;
+    }
+
+}
+
+@media only screen and (max-width:810px){
+    /* hero page */
+    .hero-row-1 , .hero-row-2{
+        font-size: 2.4rem;
+    }
+    .row2-vid , .row1-vid{
+        width: 12vw;
+        height: 8vh;
+    }
+    .rounded-full{
+        width: 60px;
+    }
+}
+
+@media only screen and (max-width:680px){
+    /* hero page */
+    .hero-row-1 , .hero-row-2{
+        font-size: 2rem;
+    }
+    .row2-vid , .row1-vid{
+        width: 12vw;
+        height: 6vh;
+    }
+    .hero-text{
+        font-size: 1.2rem;
+    }
+
+}
+
+@media only screen and (max-width:560px){
+    /* hero page */
+    .hero-row-1 , .hero-row-2{
+        font-size: 1.8rem;
+    }
+    .row2-vid , .row1-vid{
+        width: 10vw;
+        height: 4vh;
+    }
+    .hero-text{
+        font-size: .8rem;
+    }
+    .rounded-full{
+        width: 40px;
+    }
+}
+
+@media only screen and (max-width:462px){
+    .hero-row-1 , .hero-row-2{
+        font-size: 1.4rem;
+    }
+    .row2-vid , .row1-vid{
+        width: 10vw;
+        height: 4vh;
+    }
+    .rounded-full{
+        width: 40px;
+    }
+}
